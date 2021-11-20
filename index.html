@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            background-image: url(https://64.media.tumblr.com/d19d143899b76534281df03e84dcaebe/c0543db4c526b7ce-ed/s1280x1920/f5f87155e50fe39499e20a71b670d2d66cb76435.jpg);
+            /* display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 50px;*/
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        video {
+            /*  max-width: calc(100% - 50px);
+      margin: 0 50px;
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 0;*/
+            width: 75%;
+            background: rgba(124, 52, 52, 0.623);
+            box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+        }
+        
+        #localVideo {
+            width: 25%;
+            background: rgba(31, 43, 92, 0.719);
+        }
+        /* .copy {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.5);
+    }*/
+        
+        header {
+            text-align: center;
+            background: rgba(169, 201, 228, 0.925);
+        }
+        
+        section {
+            text-align: center;
+            background: rgba(94, 161, 130, 0.808);
+        }
+        
+        footer {
+            background: rgb(33, 41, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>ChipsetNetWeb</h1>
+        <h2>WebRTC Video Chat</h2>
+        <h3>Idea by Netten Webbew</h3>
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="25%" height="25%" viewBox="0 0 24.0 24.0" enable-background="new 0 0 24.0 24.0" xml:space="preserve">
+<defs>
+	<linearGradient id="fillGrad3" x1="1.204%" y1="54.488%" x2="100.000%" y2="50.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(255,0,0);stop-opacity:1.000" />
+		<stop offset="50.000%" style="stop-color:rgb(0,255,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(0,0,255);stop-opacity:1.000" />
+	</linearGradient>
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'lora'; 
+			src: url('./lora.ttf');
+		}
+	</style>
+</defs>
+	<path
+		fill="#FFFFFF"
+		stroke="#000000"
+		fill-opacity="0.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M0.00,0.00L24.00,0.00L24.00,24.00L0.00,24.00z"/>
+	<path
+		fill="#57ABFF"
+		stroke="#040404"
+		fill-opacity="0.490"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.24"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M0.76,4.85L20.97,4.85L20.97,14.62L0.76,14.62z"/>
+	<path
+		fill="#00CF28"
+		stroke="#060606"
+		fill-opacity="0.224"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.24"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M3.27,9.69L23.22,9.69L23.22,19.95L3.27,19.95z"/>
+
+	<text 
+		font-size="3.9241338"
+		font-family="lora"
+		stroke-width="0.24"
+		stroke="#000000"
+		stroke-opacity="1.000"
+		fill-opacity="0"
+		text-anchor="start"
+  		transform="rotate(-0.0 12.2333355 11.951813) scale(0.54345244 1.0)" >
+		<tspan x="8.205407" y="13.423813">ChipsetNetWeb</tspan>
+	</text> 
+
+	<text 
+		font-size="3.9241338"
+		font-family="lora"
+		fill="url(#fillGrad3)"
+		stroke-width="0"
+		fill-opacity="1.0"
+		text-anchor="start"
+  		transform="rotate(-0.0 12.2333355 11.951813) scale(0.54345244 1.0)" >
+
+		<tspan x="8.205407" y="13.423813">ChipsetNetWeb</tspan>
+	</text>
+</svg>
+
+    </header>
+    <section>
+        <!--div class="copy">Send your URL to a friend to start a video call</div-->
+        <video id="localVideo" autoplay muted>i am</video>
+        <video id="remoteVideo" autoplay></video>
+
+    </section>
+    <footer>
+
+        <h3>ChipsetNetWeb</3>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
